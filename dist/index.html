@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>cnode</title><style>html,body,#App,ul,li,h1,h2,h3,h4,h5,h6,p{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      html,body,#App{
+        width:  100%;
+        height: 100%;
+        overflow: hidden;
+      }</style><link href=./static/css/app.01bd4e3587a2c738e078e04f6fab3550.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.301c022813d26ac80534.js></script><script type=text/javascript src=./static/js/vendor.2e7e12ca992b6f02df10.js></script><script type=text/javascript src=./static/js/app.726d2892207d3ca5afbf.js></script></body><script>document.documentElement.style.fontSize=document.documentElement.clientWidth/320*20+'px';
+    //rem 的转化
+    (function(doc, win) {
+      var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function() {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+          };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);</script></html>
